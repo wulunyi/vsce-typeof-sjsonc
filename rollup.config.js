@@ -19,11 +19,7 @@ export default [
                 target: 'es5',
             }),
             cleanup({ comments: 'none', extensions: ['ts'] }),
-            resolve({
-                customResolveOptions: {
-                    moduleDirectory: 'node_modules',
-                },
-            }),
+            resolve(),
             commonjs(),
             visualizer(),
             terser({

@@ -1,5 +1,5 @@
 {
-	"name": "typeof-sjsonc",
+	"name": "vsce-typeof-sjsonc",
 	"displayName": "typeof-sjsonc",
 	"description": "typeof-sjsonc description",
 	"version": "0.0.1",
@@ -54,6 +54,7 @@
 		"vscode": "^1.1.28"
 	},
 	"dependencies": {
-		"tslib": "^1.10.0"
+		"tslib": "^1.10.0",
+		"typeof-sjsonc": "^1.0.0"
 	}
 }
