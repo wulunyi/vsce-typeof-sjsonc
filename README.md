@@ -6,13 +6,9 @@
 
 命令： typeof from clipboard
 
-typeof-jsonc 转换
+typeof-sjsonc 转换
 
 ![typeof-jsonc](docs/images/typeof-jsonc.png "typeof-jsonc")
-
-typeof-table 转换
-
-![typeof-jsonc](docs/images/typeof-table.png "typeof-jsonc")
 
 ## 快捷键
 
