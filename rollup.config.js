@@ -4,6 +4,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import { terser } from 'rollup-plugin-terser';
 import visualizer from 'rollup-plugin-visualizer';
 import cleanup from 'rollup-plugin-cleanup';
+import del from 'rollup-plugin-delete';
 
 export default [
     {
@@ -11,9 +12,11 @@ export default [
         output: {
             file: './out/extension.js',
             format: 'cjs',
+            sourcemap: true,
         },
         external: ['vscode'],
         plugins: [
+            del({targets: 'out/*'}),
             typescript({
                 module: 'ESNext',
                 target: 'es5',
