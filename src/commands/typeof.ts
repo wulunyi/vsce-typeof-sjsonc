@@ -11,7 +11,6 @@ const typeofCommand = vscode.commands.registerCommand('extension.typeof-sjsonc',
 
         const { activeTextEditor } = vscode.window;
         
-
         if (activeTextEditor) {
             const typeName = 'Root';
             const result = typeofSjsonc(pasteText, typeName);
@@ -22,10 +21,14 @@ const typeofCommand = vscode.commands.registerCommand('extension.typeof-sjsonc',
                 activeTextEditor.edit((editBuilder) => {
                     const active = activeTextEditor.selection.active;
                     line += active.line;
+                    start += active.character;
 
                     editBuilder.insert(active, result);
                 }).then(() => {
-                    activeTextEditor.selection = new vscode.Selection(new vscode.Position(line, start), new vscode.Position(line, start + typeName.length));
+                    activeTextEditor.selection = new vscode.Selection(
+                        new vscode.Position(line, start), 
+                        new vscode.Position(line, start + typeName.length)
+                    );
 
                     showInformationMessage('生成成功');
                 });
