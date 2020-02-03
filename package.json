@@ -2,7 +2,7 @@
 	"name": "vsce-typeof-sjsonc",
 	"displayName": "typeof-sjsonc",
 	"description": "typeof-sjsonc description",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "wulunyi",
 	"icon": "icon.png",
 	"engines": {
