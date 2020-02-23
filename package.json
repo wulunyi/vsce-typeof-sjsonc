@@ -2,7 +2,7 @@
 	"name": "vsce-typeof-sjsonc",
 	"displayName": "typeof-sjsonc",
 	"description": "typeof-sjsonc description",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "wulunyi",
 	"icon": "icon.png",
 	"engines": {
@@ -26,7 +26,13 @@
 		"keybindings": [
 			{
 				"command": "extension.typeof-sjsonc",
-				"key": "ctrl+alt+V"
+                "key": "ctrl+alt+V",
+                "args": {}
+            },
+            {
+				"command": "extension.typeof-sjsonc",
+				"key": "ctrl+alt+S",
+				"args": {"separate": true}
 			}
 		]
 	},
@@ -39,23 +45,23 @@
 		"pack": "vsce package"
 	},
 	"devDependencies": {
-		"@rollup/plugin-commonjs": "^11.0.1",
-		"@rollup/plugin-node-resolve": "^7.0.0",
+		"@rollup/plugin-commonjs": "^11.0.2",
+		"@rollup/plugin-node-resolve": "^7.1.1",
 		"@rollup/plugin-typescript": "^3.0.0",
 		"@types/mocha": "^2.2.42",
-		"@types/node": "^10.12.21",
-		"rollup": "^1.30.1",
+		"@types/node": "^10.17.16",
+		"rollup": "^1.31.1",
 		"rollup-plugin-cleanup": "^3.1.1",
 		"rollup-plugin-delete": "^1.2.0",
 		"rollup-plugin-terser": "^5.2.0",
 		"rollup-plugin-visualizer": "^3.3.1",
-		"tslint": "^5.12.1",
-		"typescript": "^3.3.1",
-		"vsce": "^1.62.0",
-		"vscode": "^1.1.28"
+		"tslint": "^5.20.1",
+		"typescript": "^3.8.2",
+		"vsce": "^1.73.0",
+		"vscode": "^1.1.36"
 	},
 	"dependencies": {
-		"tslib": "^1.10.0",
-		"typeof-sjsonc": "^1.0.0"
+		"tslib": "^1.11.0",
+		"typeof-sjsonc": "^1.0.2-beta.1"
 	}
 }

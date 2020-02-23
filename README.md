@@ -1,18 +1,40 @@
 # typeof-jsonc
 
-将剪切板中的 sjsonc 文本转换为 TypeScript interface
+将剪切板中的 json/jsonc/jsonLick 文本转换为 TypeScript interface
 
 ## commands
 
 命令： typeof from clipboard
 
-typeof-sjsonc 转换
+剪贴板内容
 
-![typeof-jsonc](docs/images/typeof-jsonc.png "typeof-jsonc")
+```text
+{
+    // 123
+    "a": 123,
+    /** true */
+    b: true,
+    c: [{d: 'test'}]
+}
+```
+
+输入结果
+
+```typescript
+export interface Root {
+    /** 123 */
+    a: number;
+    /** true */
+    b: boolean;
+    c: Array<{
+        d: string;
+    }>;
+}
+```
 
 ## 快捷键
 
-`ctrl+alt+V`
++ `ctrl+alt+V` 普通模式，将输入转换为一整个 interface
++ `ctrl+alt+S` 分割模式，将输入中对象分割为多个 interface
 
 复制完毕后进入粘贴的位置执行快捷键  
-

@@ -1,9 +1,13 @@
 # Change Log
 
-## v1.0.1
+## v0.0.3
+
++ 新增分割模式，支持将可拆解对象分割为单独 interface
+  
+## v0.0.2
 
 Modify document
 
-## v1.0.0
+## v0.0.1
 
-First version  
+First version

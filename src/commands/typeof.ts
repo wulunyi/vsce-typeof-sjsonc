@@ -5,7 +5,7 @@ import { typeofSjsonc } from 'typeof-sjsonc';
 const { showInformationMessage, showErrorMessage } = vscode.window;
 const { clipboard } = vscode.env;
 
-const typeofCommand = vscode.commands.registerCommand('extension.typeof-sjsonc', async () => {
+const typeofCommand = vscode.commands.registerCommand('extension.typeof-sjsonc', async (options) => {
     try {
         const pasteText = await clipboard.readText();
 
@@ -13,7 +13,7 @@ const typeofCommand = vscode.commands.registerCommand('extension.typeof-sjsonc',
         
         if (activeTextEditor) {
             const typeName = 'Root';
-            const result = typeofSjsonc(pasteText, typeName);
+            const result = typeofSjsonc(pasteText, typeName, options);
 
             let [ line, start ] = findWordPosition(result, typeName);
 
