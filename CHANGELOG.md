@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.0.4
+
++ Fix camel case name recognition error
+
 ## v0.0.3
 
 + 新增分割模式，支持将可拆解对象分割为单独 interface

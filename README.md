@@ -1,4 +1,4 @@
-# typeof-jsonc
+# vsce-typeof-sjsonc
 
 将剪切板中的 json/jsonc/jsonLick 文本转换为 TypeScript interface
 

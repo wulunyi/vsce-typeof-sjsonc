@@ -26,13 +26,15 @@
 		"keybindings": [
 			{
 				"command": "extension.typeof-sjsonc",
-                "key": "ctrl+alt+V",
-                "args": {}
-            },
-            {
+				"key": "ctrl+alt+V",
+				"args": {}
+			},
+			{
 				"command": "extension.typeof-sjsonc",
 				"key": "ctrl+alt+S",
-				"args": {"separate": true}
+				"args": {
+					"separate": true
+				}
 			}
 		]
 	},
@@ -49,19 +51,19 @@
 		"@rollup/plugin-node-resolve": "^7.1.1",
 		"@rollup/plugin-typescript": "^3.0.0",
 		"@types/mocha": "^2.2.42",
-		"@types/node": "^10.17.16",
-		"rollup": "^1.31.1",
+		"@types/node": "^10.17.17",
+		"rollup": "^1.32.0",
 		"rollup-plugin-cleanup": "^3.1.1",
 		"rollup-plugin-delete": "^1.2.0",
 		"rollup-plugin-terser": "^5.2.0",
 		"rollup-plugin-visualizer": "^3.3.1",
 		"tslint": "^5.20.1",
-		"typescript": "^3.8.2",
-		"vsce": "^1.73.0",
+		"typescript": "^3.8.3",
+		"vsce": "^1.74.0",
 		"vscode": "^1.1.36"
 	},
 	"dependencies": {
-		"tslib": "^1.11.0",
-		"typeof-sjsonc": "^1.0.2-beta.1"
+		"tslib": "^1.11.1",
+		"typeof-sjsonc": "^1.0.2"
 	}
 }
