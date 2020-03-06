@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.0.5
+
++ Fix separate 模式引用计数问题
+
 ## v0.0.4
 
 + Fix camel case name recognition error
