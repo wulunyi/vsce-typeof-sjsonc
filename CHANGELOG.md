@@ -1,5 +1,9 @@
 # Change Log
 
+## v0.0.6
+
++ Fix typeof-sjsonc 逻辑错误
+
 ## v0.0.5
 
 + Fix separate 模式引用计数问题

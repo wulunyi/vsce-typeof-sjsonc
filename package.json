@@ -2,7 +2,7 @@
 	"name": "vsce-typeof-sjsonc",
 	"displayName": "typeof-sjsonc",
 	"description": "typeof-sjsonc description",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"publisher": "wulunyi",
 	"icon": "icon.png",
 	"engines": {
@@ -64,6 +64,6 @@
 	},
 	"dependencies": {
 		"tslib": "^1.11.1",
-		"typeof-sjsonc": "^1.0.3"
+		"typeof-sjsonc": "^1.0.4"
 	}
 }
